@@ -1,0 +1,134 @@
+.navbar-wrapper{
+    background: (0,0,0,0.1);
+    padding: .5rem 0;
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    backdrop-filter: blur(50px);
+}
+
+.navbar-content{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 165px;
+    height: 3rem;
+    
+}
+.navbar-wrapper ul{
+  display: flex; 
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  cursor: pointer;
+  
+}
+.nav-content li{
+    margin: 0 1.5rem;
+}
+
+.menu-item{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    position: relative;
+    
+}
+.btn{
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    outline: 1.5px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+
+}
+
+.menu-item::before{
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+    border-radius: .5rem;
+    position: absolute;
+    opacity: 0;
+    bottom: -0.6rem;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover::before{
+    width:100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.menu-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: white;
+    background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.menu-btn:hover{
+    color: #7e61e7;
+    background: #000;
+    outline: 1px solid #7e61e7;
+}
+@media (max-width:426px){
+    .logo{
+        width: 5.5rem;
+        height:auto;
+    }
+    .menu-btn{
+        height: 33px;
+        width: auto;
+    }
+}
+
+@media (max-width:769px){
+    .menu-btn{
+        display: block;
+
+    }
+    .navbar-wrapper ul{
+        display: none;
+    }
+}
+
+@media (max-width:1325px){
+    .navbar-wrapper{
+        padding: 0 2rem;
+    }
+}
