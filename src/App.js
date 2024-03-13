@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./components/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";

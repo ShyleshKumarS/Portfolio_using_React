@@ -1,0 +1,22 @@
+.skill-icon img{
+    width: 100px;
+    height: 100px;
+    object-fit:fill;
+}
+
+.skills-card{
+    border-radius: .65rem;
+    border: 1px solid #6751b9;
+    padding: 2.5rem;
+    text-align: center;
+    background: rgba(22, 17, 47, .398);
+    backdrop-filter: blur(1rem);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+    
+.skills-card:hover,
+.skills-card:active {
+    background: linear-gradient(180deg,#4a359c 0%,#8d74e6 100%);
+}
