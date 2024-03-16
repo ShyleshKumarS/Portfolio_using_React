@@ -216,5 +216,10 @@
         height: auto;
         max-width: 25px;
     }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }

@@ -34,12 +34,12 @@ export const SKILLS=[
         title:"AI and ML",
         icon:"./assets/ML.png",
         skills:[
-            { skill:"Numpy",percentage:"60%"},
-            { skill:"Pandas", percentage:"60%"},
-            { skill:"seaborn", percentage:"60%"},
-            { skill:"Matplotlib",percentage:"60%"},
-            { skill:"Keras",percentage:"50%"},
-            { skill:"Tensorflow",percentage:"50%"},
+            { skill:"Numpy",percentage:"70%"},
+            { skill:"Pandas", percentage:"70%"},
+            { skill:"seaborn", percentage:"70%"},
+            { skill:"Matplotlib",percentage:"70%"},
+            { skill:"Keras",percentage:"65%"},
+            { skill:"Tensorflow",percentage:"65%"},
         ],
     },
     {

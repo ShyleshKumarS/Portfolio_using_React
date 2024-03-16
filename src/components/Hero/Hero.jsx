@@ -1,14 +1,18 @@
 import React from "react";
 import "./Hero.css";
+import Resume from "./Resume";
 const Hero = () => {
   return (
-    <section className="hero-container">
+    <section className="hero-container" id="home">
       <div className="hero-content">
         <h2>Building Digital Experiences That Inspire</h2>
         <p>
           Passionate Frontend Developer | AI Enthusiast | Transforming Ideas
           into Seamless Coding Solutions
         </p>
+        <div className="buttons">
+          <Resume/>
+        </div>
       </div>
       <div className="hero-jpg">
         <div>

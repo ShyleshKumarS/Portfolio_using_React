@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./nav.css";
 import MobileNav from "./MobileNavbar/MobileNav.jsx";
 
+import { Link as ScrollLink } from 'react-scroll';
+
 const Navbar = () => {
 
   const[openMenu,setOpenMenu]=useState(false);
@@ -17,19 +19,50 @@ const Navbar = () => {
           <img className="logo" src="./assets/logo.png" />
           <ul>
             <li>
-              <a className="menu-item">Home</a>
+              <ScrollLink 
+                className="menu-item"
+                to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-140} > Home</ScrollLink>
+
+              
             </li>
             <li>
               <a className="menu-item">About</a>
             </li>
             <li>
-              <a className="menu-item">Skills</a>
+            <ScrollLink
+                className="menu-item"
+                to="skillsSection"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-140} 
+              >
+                Skills
+              </ScrollLink>
+
             </li>
             <li>
               <a className="menu-item">Projects</a>
             </li>
             <li>
-              <a className="menu-item">Contact me</a>
+              <ScrollLink
+                className="menu-item"
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={0} 
+              >
+                Contact me
+              </ScrollLink>
+              <a className="menu-item"></a>
             </li>
 
             <button className="btn btn--primary" onClick={() => {}}>
