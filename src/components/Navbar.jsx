@@ -16,7 +16,7 @@ const Navbar = () => {
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
       <nav className="navbar-wrapper">
         <div className="navbar-content">
-          <img className="logo" src="./assets/logo.png" />
+          <img className="logo" src="./assets/logo.png" alt="logo"/>
           <ul>
             <li>
               <ScrollLink 
@@ -31,7 +31,7 @@ const Navbar = () => {
               
             </li>
             <li>
-              <a className="menu-item">About</a>
+              <a className="menu-item" href="#a">About</a>
             </li>
             <li>
             <ScrollLink
@@ -48,7 +48,7 @@ const Navbar = () => {
 
             </li>
             <li>
-              <a className="menu-item">Projects</a>
+              <a className="menu-item" href="https://github.com/ShyleshKumarS" target="_blank" rel="noreferrer">Projects</a>
             </li>
             <li>
               <ScrollLink
@@ -62,10 +62,11 @@ const Navbar = () => {
               >
                 Contact me
               </ScrollLink>
-              <a className="menu-item"></a>
             </li>
 
-            <button className="btn btn--primary" onClick={() => {}}>
+            <button className="btn btn--primary" onClick={() => {
+              window.open("https://www.linkedin.com/in/shyleshkumars/","_blank");
+            }}>
               Get in touch
             </button>
           </ul>

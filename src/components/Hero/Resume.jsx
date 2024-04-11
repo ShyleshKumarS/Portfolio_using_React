@@ -3,7 +3,12 @@ import React from 'react'
 const Resume = () => {
   return (
     <div>
-      <button onClick={()=>console.log("")}  className="btn btn-primary">Download Resume</button>
+      <button onClick={()=>{
+        const link = document.createElement('a');
+        link.href = './assets/Resume.pdf';
+        link.download = "Resume_Shylesh";
+        link.click();
+      }}  className="btn btn-primary">Download Resume</button>
     </div>
   )
 }

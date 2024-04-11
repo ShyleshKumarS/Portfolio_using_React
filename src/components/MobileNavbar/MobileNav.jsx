@@ -1,5 +1,6 @@
 import React from "react";
 import "./MobileNav.css";
+import { Link as ScrollLink } from 'react-scroll';
 const MobileNav = ({ isOpen, toggleMenu }) => {
   return (
     <>
@@ -11,21 +12,50 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
           <img className="logo" src="./assets/logo.png" />
           <ul>
             <li>
-              <a className="menu-item">Home</a>
+            <ScrollLink 
+                className="menu-item"
+                to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-140} > Home</ScrollLink>
             </li>
             <li>
-              <a className="menu-item">About</a>
+              <a className="menu-item" href="#A">About</a>
             </li>
             <li>
-              <a className="menu-item">Skills</a>
+            <ScrollLink
+                className="menu-item"
+                to="skillsSection"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-140} 
+              >
+                Skills
+              </ScrollLink>
             </li>
             <li>
-              <a className="menu-item">Projects</a>
+              <a className="menu-item" href="https://github.com/ShyleshKumarS" target="_blank" rel="noreferrer">Projects</a>
             </li>
             <li>
-              <a className="menu-item">Contact me</a>
+            <ScrollLink
+                className="menu-item"
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={0} 
+              >
+                Contact me
+              </ScrollLink>
             </li>
-            <button className="btn btn--primary" onClick={() => {}}>
+            <button className="btn btn--primary" onClick={() => {
+              window.open("https://www.linkedin.com/in/shyleshkumars/","_blank")
+            }}>
               Get in touch
             </button>
           </ul>

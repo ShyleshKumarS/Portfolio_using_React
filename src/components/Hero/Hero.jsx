@@ -7,8 +7,7 @@ const Hero = () => {
       <div className="hero-content">
         <h2>Building Digital Experiences That Inspire</h2>
         <p>
-          Passionate Frontend Developer | AI Enthusiast | Transforming Ideas
-          into Seamless Coding Solutions
+        Passionate AI/ML Developer and Frontend Developer | Transforming Ideas into Seamless Coding Solutions
         </p>
         <div className="buttons">
           <Resume/>
